@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0"/>
+    <title>My App Quiz</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <div id="start">start</div>
+      <div id="quiz-wrap" style="display: none">
+        <div id="question"></div>
+        <div id="option">
+          <div class="option" id="A" onclick="checkOption('A');"></div>
+          <div class="option" id="B" onclick="checkOption('B');"></div>
+          <div class="option" id="C" onclick="checkOption('C');"></div>
+          <div class="option" id="D" onclick="checkOption('D');"></div>
+        </div>
+        <div id="next-btn" style="display: none"></div>
+        <div id="progress"></div>
+      </div>
+      <div id="scoreRecord" style="display: none"></div>
+    </div>
+    
+    <script src="script.js"></script>
+  </body>
+</html>
