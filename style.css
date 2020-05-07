@@ -69,7 +69,7 @@ body {
 }
 
 .option:hover {
-  border : 2px solid grey;
+  border : 2px solid black;
   font-weight: bold;
 }
 
@@ -119,8 +119,23 @@ body {
 
 @media (min-width: 768px){
   
+.container {
+  position: relative;
+  width: 85%;
+  height: 95%;
+  margin: 40% auto;
+  background-color: white;
+}
+  
+#start {
+  position: absolute;
+  top: 50px;
+  left: 150px;
+  text-align: center;
+}
+  
 #question {
-  font-size: 180%;
+  font-size: 200%;
   margin-bottom: 20px;
 }
 
@@ -128,5 +143,16 @@ body {
   display: grid;
   grid-template-columns: repeat(2,auto);
   gap: 10px;
+}
+
+.option {
+  font-size: 150%;
+  font-weight: bold;
+  border: 1px solid black;
+  margin: 4px;
+  padding: 25px 10px;
+  width: auto;
+  border-radius: 5px;
+  text-align: center;
 }
 }

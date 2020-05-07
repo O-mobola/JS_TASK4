@@ -70,7 +70,6 @@ const lastQuestion = questions.length-1;
 let score = 0;
 
 
-
 //show questions
 
 function updateQuestion(){
@@ -135,6 +134,7 @@ function checkOption(answer){
 
 function optionIsCorrect(){
   document.getElementById(liveQuestion).style.backgroundColor = "green";
+  document.getElementById('option').style.color = "white";
 }
 
 function optionIsWrong(){
