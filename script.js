@@ -68,8 +68,7 @@ let questions = [
 let liveQuestion = 0;
 const lastQuestion = questions.length-1;
 let score = 0;
-let change;
-let correct;
+
 
 
 //show questions
@@ -85,7 +84,7 @@ function updateQuestion(){
 }
 
 
-//An event listener to call function startQuizGame
+//Event listeners
 start.addEventListener("click", startQuizGame);
 next.addEventListener("click", updateQuestion);
 
@@ -120,7 +119,6 @@ function checkOption(answer){
     //option chosen is correct
     score++;
     optionIsCorrect();
-    changeColor();
   } else {
     optionIsWrong();
   }
@@ -137,13 +135,6 @@ function checkOption(answer){
 
 function optionIsCorrect(){
   document.getElementById(liveQuestion).style.backgroundColor = "green";
-  document.getElementById(questions=>correct).style.backgroundColor = "green";
-}
-
-function changeColor(checkOption){
-   if(checkOption){
- document.getElementById(questions=>correct).style.color = "white";
-   }
 }
 
 function optionIsWrong(){

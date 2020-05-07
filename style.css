@@ -115,3 +115,18 @@ body {
   font-weight: bold;
   text-align: center;
 }
+
+
+@media (min-width: 768px){
+  
+#question {
+  font-size: 180%;
+  margin-bottom: 20px;
+}
+
+#option {
+  display: grid;
+  grid-template-columns: repeat(2,auto);
+  gap: 10px;
+}
+}
